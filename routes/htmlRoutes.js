@@ -16,7 +16,7 @@ htmlRouter.get("/notes", function (req, res) {
 });
 
 // If no matching route is found default to index
-htmlRouter.get("*", function (req, res) {
+htmlRouter.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
