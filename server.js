@@ -8,7 +8,7 @@ let PORT = process.env.PORT || 4000;
 
 // Routers
 const htmlRouter = require("./routes/htmlRoutes");
-//const apiRouter = require("./routes/apiRoutes");
+const apiRouter = require("./routes/apiRoutes");
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -18,11 +18,11 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(express.static("db"));
 app.use(htmlRouter);
-//app.use(apiRouter);
+app.use(apiRouter);
 
 
 // Start the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-//run 'npm start' to start the server
+//run 'npm start' or 'nodemon server.js' to start the server
 //https://medium.com/@ralph1786/how-to-setup-an-express-server-5fd9cd9ae073
