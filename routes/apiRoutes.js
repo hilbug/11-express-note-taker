@@ -9,7 +9,7 @@ const fs = require("fs");
 // Read the `db.json` file and return all saved notes as JSON.
 apiRouter.get("/api/notes", (req, res) => {
 
-    fs.readFile('./db/db.json', 'utf8', function (error, file) {
+    fs.readFile('./db/db.json', 'utf8', (error, file) => {
         if (error) throw error;
 
         // return parsed note text
@@ -20,7 +20,7 @@ apiRouter.get("/api/notes", (req, res) => {
 
 //POST
 // receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
-apiRouter.post("/api/notes", function (req, res) {
+apiRouter.post("/api/notes", (req, res) => {
     // 1. read db file first and parse it! 
     // 2. then, push new note to it
     // 3. then write back the stringified version of it
@@ -48,6 +48,7 @@ apiRouter.post("/api/notes", function (req, res) {
             if (err) throw err;
             console.log("The new note was appended to the file!");
         });
+        return res.send(JSON.parse(newStringifiedFile));
     });    
 });
 
