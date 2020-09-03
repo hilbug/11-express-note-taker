@@ -20,11 +20,9 @@ htmlRouter.get("/", (req, res) => {
 });
 
 // If no matching route is found default to index
-// with *, it wipes out the left hand list and throws an error: 
-// jQuery.Deferred exception: notes.forEach is not a function TypeError: notes.forEach is not a function at Object.renderNoteList
-// htmlRouter.get("*", function (req, res) {
-//     res.sendFile(path.join(__dirname, "../public/index.html"));
-// });
+htmlRouter.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
 module.exports = htmlRouter;
 
