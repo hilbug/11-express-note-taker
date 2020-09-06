@@ -40,4 +40,4 @@ Application should allow users to delete previously saved notes.
 - [Node Girls Express Blog](https://node-girls.gitbook.io/intro-to-express/)
 - Many thanks to Kemp for assisting with the api deletion route
 - Many thanks to [@kyrelldixon](https://twitter.com/kyrelldixon) for his stellar explanation of JSON parse vs stringify
-- Front-end code provided by Triology
+- Front-end code provided by Trilogy Education
