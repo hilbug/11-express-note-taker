@@ -12,7 +12,9 @@ For users that need to keep track of a lot of information, it's easy to forget o
 Add Heroku link 
 
 ### Technologies Used
-List technologies
+- Node.js
+- Express.js
+- Heroku
 
 ### Contact
 Please email me with questions: hil.ferraro@gmail.com
@@ -35,3 +37,6 @@ Application should allow users to delete previously saved notes.
 ```
 
 ## Honorable Mentions
+- [Express.js](https://expressjs.com/en/guide/routing.html)
+- [Node Girls Express Blog](https://node-girls.gitbook.io/intro-to-express/)
+- Many thanks to Kemp for assisting with the api deletion route
