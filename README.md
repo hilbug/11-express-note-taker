@@ -1,15 +1,14 @@
 # Note Taker
 
 ## Description
-An application to write, save, and delete notes. Uses an express back-end to save and retrieve data from a JSON file.
-
-### Business Context
-
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+An application to write, save, and delete notes. Uses an express back-end to save and retrieve data from a JSON file. For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
 
 
 ### Deployed App
-Add Heroku link 
+Check out [Note Taker Pro](https://note-taker-pro.herokuapp.com/) on Heroku!
+
+### App Preview
+![Note Taker](https://user-images.githubusercontent.com/65197724/92317588-9a594880-efd0-11ea-89c4-bfd63a68431d.gif)
 
 ### Technologies Used
 - Node.js
@@ -18,9 +17,6 @@ Add Heroku link
 
 ### Contact
 Please email me with questions: hil.ferraro@gmail.com
-
-## Screenshots
-Add screenshots
 
 ## User Story
 ```
@@ -40,3 +36,4 @@ Application should allow users to delete previously saved notes.
 - [Express.js](https://expressjs.com/en/guide/routing.html)
 - [Node Girls Express Blog](https://node-girls.gitbook.io/intro-to-express/)
 - Many thanks to Kemp for assisting with the api deletion route
+- Many thanks to [@kyrelldixon](https://twitter.com/kyrelldixon) for his stellar explanation of JSON parse vs stringify
